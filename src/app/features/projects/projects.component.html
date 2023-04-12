@@ -1,0 +1,13 @@
+<section class="projects">
+  <h1 class="heading gradient-text"> {{projects?.headingGradientText}} </h1>
+  <div class="margin-top-6">
+    <div class="feature-box-small"
+         *ngFor="let project of projects?.projectList">
+      <div class="feature-box-small--content">{{project?.description}}</div>
+      <a href="{{project?.externalLink}}"
+         target="_blank"
+         class="btn--link align-right-bottom">{{project?.linkName}}
+      </a>
+    </div>
+  </div>
+</section>

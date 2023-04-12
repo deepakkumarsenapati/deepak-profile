@@ -1,0 +1,39 @@
+@import "./variable";
+
+.btn {
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.7rem 3rem;
+  background: linear-gradient(to right bottom,
+      $color-primary-light,
+      $color-primary-dark);
+  color: $color-white;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+
+  i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    background: $color-primary-light;
+  }
+}
+
+.btn--link {
+  text-decoration: none;
+  color: $color-primary-dark;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  display: inline-block;
+
+  &:hover {
+    color: $color-primary-light;
+  }
+}

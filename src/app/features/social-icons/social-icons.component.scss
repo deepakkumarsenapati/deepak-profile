@@ -1,0 +1,31 @@
+@import "./../../../scss/utility";
+@import "./../../../scss/button";
+@import "./../../../scss/variable";
+@import "./../../../scss/mixin";
+
+.social-icons {
+  margin-top: 1.8rem;
+  ul {
+    list-style: none;
+    li {
+      background: $color-grey-light;
+      width: 4rem;
+      height: 4rem;
+      display: inline-block;
+      margin-left: 1.2rem;
+      padding-top: 0.8rem;
+      text-align: center;
+      border-radius: 0.4rem;
+
+      @include respond(phone) {
+        padding-top: 0.5rem;
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background: $color-grey-light-2;
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+}

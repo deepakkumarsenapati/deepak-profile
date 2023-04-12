@@ -1,0 +1,13 @@
+<div class="nav-list">
+  <div class="user">
+    <img src="assets/photo.jpeg" alt="profile" />
+    <h3 class="name">{{ menu?.title }}</h3>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li *ngFor="let link of menu?.links">
+        <a [routerLink]="link?.url" class="btn btn--green">{{ link?.name }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>

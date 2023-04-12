@@ -1,0 +1,39 @@
+@import "./../../../scss/variable";
+@import "./../../../scss/button";
+@import "./../../../scss/utility";
+
+.about-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+
+  h1 {
+    font-size: 3rem;
+    color: $color-black;
+
+    span {
+      text-transform: uppercase;
+      display: inline-block;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $color-black;
+  }
+
+  p {
+    font-size: 1.7rem;
+    color: $color-black;
+    padding: 1rem 0;
+    line-height: 2.8rem;
+    text-align: justify;
+  }
+}

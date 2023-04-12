@@ -1,0 +1,23 @@
+<div class="app-container">
+
+  <div id="menu"
+       class="fas fa-bars"
+       [ngClass]="menu?'fas fa-bars fa-times':'fas fa-bars'"
+       (click)="menu = !menu"></div>
+
+  <div class="sticky-sidebar"
+       [ngClass]="menu ? 'show':'hide'"
+       (click)="menu = !menu">
+    <app-menus></app-menus>
+  </div>
+
+  <div class="app-sidebar">
+    <app-menus></app-menus>
+  </div>
+
+  <div class="app-content">
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
