@@ -1,16 +1,16 @@
-<section class="education"
-         id="education">
-  <h1 class="heading">{{educations?.headingNormalText}} <span
-          class="gradient-text">{{educations?.headingGradientText}}</span></h1>
+<section class="education" id="education">
+  <h1 class="heading">
+    {{ educations?.headingNormalText }}
+    <span class="gradient-text">{{ educations?.headingGradientText }}</span>
+  </h1>
 
-  <div class="box-container margin-top-6">
-    <div class="box feature-box"
-         *ngFor="let education of educations?.educationList">
-      <i class="fas fa-briefcase"></i>
-      <h3>{{ education?.courseName }}</h3>
-      <div>
-        <p>{{ education?.university }}</p>
-      </div>
+  <div class="edu-box-container">
+    <div class="box" *ngFor="let workexp of educations?.workExperience">
+      <div class="company">{{ workexp.companyName }}</div>
+      <h3 class="designation">
+        <span> {{ workexp.designation }}</span>
+        <span class="chip">{{ workexp.duration }}</span>
+      </h3>
     </div>
   </div>
 </section>

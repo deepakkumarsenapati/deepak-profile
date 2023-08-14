@@ -1,18 +1,47 @@
-<section class="education"
-         id="education">
-  <h1 class="heading">{{educations?.headingNormalText}} <span
-          class="gradient-text">{{educations?.headingGradientText}}</span></h1>
+<section class="education" id="education">
+  <h1 class="heading">
+    {{ educations?.headingNormalText }}
+    <span class="gradient-text">{{ educations?.headingGradientText }}</span>
+  </h1>
 
   <div class="box-container margin-top-6">
-    <div class="box feature-box"
-         *ngFor="let education of educations?.educationList">
+    <div
+      class="box feature-box"
+      *ngFor="let education of educations?.educationList"
+    >
       <i class="fas fa-graduation-cap"></i>
-      <div class="period">
+      <div class="chip">
         <span>{{ education?.passingYear }}</span>
       </div>
       <h3>{{ education?.courseName }}</h3>
       <div>
         <p>{{ education?.university }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards-container">
+    <div class="skils-card">
+      <div class="tool-bar">Top Skills</div>
+      <div class="skills">
+        <div class="progress" *ngFor="let skill of educations?.topSkills">
+          <h3>
+            {{ skill.skillName }} <span>{{ skill.percentage }}</span>
+          </h3>
+          <div class="bar"><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skils-card">
+      <div class="tool-bar">Tools Used</div>
+      <div class="skills">
+        <div class="progress" *ngFor="let tools of educations?.toolsUsed">
+          <h3>
+            {{ tools.toolName }}<span>{{ tools.percentage }}</span>
+          </h3>
+          <div class="bar"><span></span></div>
+        </div>
       </div>
     </div>
   </div>

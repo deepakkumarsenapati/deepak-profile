@@ -19,7 +19,7 @@
   }
 }
 
-.chips-group{
+.chips-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -137,6 +137,14 @@
   margin-top: 6rem;
 }
 
+.margin-top-4 {
+  margin-top: 4rem;
+}
+
+.margin-top-3 {
+  margin-top: 3rem;
+}
+
 .align-right-bottom {
   position: absolute;
   bottom: 1rem;
@@ -144,18 +152,14 @@
 }
 
 .chip {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-align: center;
   background: linear-gradient(
-    to right,
+    to left,
     $color-primary-light,
     $color-primary-dark
   );
-  display: inline-block;
-  padding: 0.4rem;
   color: $color-white;
-  border-radius: 0.4rem;
-}
-
-.margin-top-3 {
-  margin-top: 3rem;
+  border-radius: 5rem;
+  padding: 0.5rem 2.5rem;
 }
